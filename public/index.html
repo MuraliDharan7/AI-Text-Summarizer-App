@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SmartSummarizer App</title>
+  <link rel="stylesheet" href="stylesheet.css">   
+  <style>
+    /* Additional styles for interactive elements */
+    .text-box {
+      background-color: #f9f9f9; /* Light grey */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .submit-button {
+      background-color: #ff6f61; /* Red */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #ff504b; /* Darker red */
+    }
+
+    .cta-section {
+      background-color: #d6e7ff; /* Light blue */
+      padding: 40px;
+      margin-top: 50px;
+    }
+
+    .cta-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cta-text {
+      flex-basis: 50%;
+      padding-right: 20px;
+    }
+
+    .cta-text h2 {
+      color: #00587a; /* Dark blue */
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .cta-text p {
+      color: #333333; /* Dark grey */
+      font-size: 16px;
+    }
+
+    .cta-button {
+      background-color: #0184bf; /* Blue */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #00669e; /* Darker blue */
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Summarizer</h1>
+  <p> Welcome to the SmartSummarizer App! This app utilizes advanced algorithms to generate concise summaries of lengthy texts. Whether you have a research paper, article, or any other text you want to summarize quickly, our app is here to help.</p>
+  <p> Simply paste your text into the text area below and click the "Summarize" button.</p>
+  <div class="container">
+    <div class="text-box">
+      <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste your text here (Min length: 200 chars. Max length: 100,000 chars.)" maxlength="100000"></textarea>
+      <button id="submit-button" class="submit-button">
+        <span class="submit-button-text">Summarize</span>
+      </button>
+    </div>
+    <div class="text-box"> 
+      <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"></textarea>
+    </div>
+  </div>
+  <section class="cta-section">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Excited to create your own apps?</h2>
+        <p>Join Postman's Student Program and enhance your software development skills with exclusive resources and opportunities.</p>
+        <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" class="cta-button" target="_blank" rel="noopener nofollow">Register as a student</a>
+      </div>
+      <img src="images/learning.png" alt="Learning Image">
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
